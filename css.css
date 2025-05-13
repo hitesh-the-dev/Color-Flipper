@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./back1.jpeg);
+    user-select: none;
+}
+
+.container{
+        /* How to make font-size responsive */
+    font-size: clamp(0.8rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    align-items: center;
+    border: 1px solid black;
+    height: 50vh;
+    box-shadow: 10px 10px 5px;
+    border-radius: 10px;
+    padding: 5vw;
+}
+
+#change{
+    width: 15vw;
+    height: minmax(5vh 10vh);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    background:linear-gradient(rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.067));
+    position: relative;
+    bottom: 1vh;
+    font-weight: 750;
+    font-size: clamp(0.4rem, 3vw, 1.0rem);
+}
+
+#showColor{
+    display: inline-block;
+    text-align: center;
+    font-size: clamp(0.7rem, 3vw, 2rem);
+    border: 1px solid black;
+    width: 8rem;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px;
+    margin-right: 3vw;
+}
+
+.changer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    flex-wrap: wrap;
+    gap: 2vw;
+    cursor: pointer;
+}
+#simple, #Hex, #JADU{
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
+    background: none;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    width: 8rem;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 550;
+    font-family:
+    ui-sans-serif
+    -apple-system
+    system-ui
+    "Segoe UI"
+    Helvetica
+    "Apple Color Emoji"
+    Arial
+    sans-serif
+    "Segoe UI Emoji"
+    "Segoe UI Symbol";
+}
